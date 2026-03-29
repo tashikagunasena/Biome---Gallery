@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jelly Biomes Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>Biome Explorer</h1>
+        <p class="subtitle">Discover the liquid beauty of Earth's ecosystems</p>
+      </header>
+
+      <nav class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">All Biomes</button>
+        <button class="filter-btn" data-filter="forest">Forests</button>
+        <button class="filter-btn" data-filter="arid">Arid</button>
+        <button class="filter-btn" data-filter="cold">Cold</button>
+        <button class="filter-btn" data-filter="water">Water</button>
+      </nav>
+
+      <div class="gallery-wrapper">
+        <button
+          class="nav-arrow left"
+          id="arrowLeft"
+          aria-label="Previous page"
+        >
+          <svg viewBox="0 0 24 24">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="gallery-grid" id="gallery">
+          <!-- Cards injected by JS -->
+        </div>
+
+        <button class="nav-arrow right" id="arrowRight" aria-label="Next page">
+          <svg viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="page-indicator" id="pageIndicator">
+        <!-- Dots injected by JS -->
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <div class="modal-image-container">
+          <img src="" alt="" class="modal-img" id="modalImg" />
+        </div>
+        <div class="modal-details">
+          <span class="card-tag" id="modalTag">Tag</span>
+          <h2 id="modalTitle">Title</h2>
+          <p id="modalDesc">Description</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
