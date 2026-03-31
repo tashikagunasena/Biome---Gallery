@@ -4,7 +4,7 @@
 
 This repository contains the source code for the **Biome Gallery**, an interactive web application developed as part of a guided educational project through the **University of Michigan**. The project showcases various biomes and ecosystems through an engaging visual gallery interface.
 
-**Live Site:** [https://tashikagunasena.github.io/Biome---Gallery/]([https://tashikagunasena.github.io/Biome---Gallery/](https://tashikagunasena.github.io/Biome-Gallery/))
+**Live Site:** https://tashikagunasena.github.io/Biome-Gallery/
 
 ---
 
